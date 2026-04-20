@@ -1,0 +1,323 @@
+/* RESET BASE */
+html, body, #root { 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= LOGIN ================= */
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  flex: 1;
+  background: #008150;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.left .content {
+  max-width: 500px;
+  padding: 50px;
+}
+
+.left h1 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+.left p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.right {
+  flex: 1;
+  background: #302222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background: #008150;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* ================= HOME ================= */
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #008150;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* MENU */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+
+.nav-list li {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+
+.nav-list li:hover {
+  color: #c7ffd8;
+}
+
+
+.nav-list li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+
+.nav-list li:hover::after {
+  width: 100%;
+}
+
+.home-content {
+  flex: 1;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #302222;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.footer {
+  background: #008150;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ================= TELA DE SELEÇÃO ================= */
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #008150; 
+  font-family: Arial, sans-serif;
+}
+
+.select-card {
+  background-color: #302222;
+  padding: 40px 50px;  
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 500px;        
+  max-width: 90%;      
+}
+
+.select-card h1 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.select-btn {
+  background-color: #DDC898;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ================= ADMIN ================= */
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.admin-left {
+  flex: 1;
+  background-color: #008150; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  color: #fff;
+  padding: 40px;
+}
+
+
+.admin-left h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.admin-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.admin-right {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-card {
+  background-color: #302222;
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+}
+
+.admin-card h1,
+.admin-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+}
+
+.admin-table {
+  width: 90%;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #000;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.btn-edit {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-exit {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.admin-footer {
+  margin-top: 20px;
+  color: #a8e6a1;
+  font-size: 16px;
+}
